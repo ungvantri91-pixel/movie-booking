@@ -1,0 +1,43 @@
+.Type {
+    display: flex;
+    background-color: #141418;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+    gap: 10px;
+}
+
+.Type .title {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 13px;
+}
+
+.Type .item, .Type .item-new {
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 3px 5px;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.Type .item {
+    background: rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.Type .item-new {
+    background-color: rgb(229, 9, 20);
+    font-weight: 700;
+}
+
+.Type .item:hover {
+    cursor: pointer;
+}
+
+.Type .item-new:hover {
+    cursor: pointer;
+}
