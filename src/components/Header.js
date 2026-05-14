@@ -13,7 +13,7 @@ function Header() {
                 </Link>
                 <div className="order">Đặt vé ngay</div>
             </div>
-            <Outlet/>
+            <Outlet />
         </>
     )
 }

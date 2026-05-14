@@ -16,6 +16,7 @@ function List() {
                     return (
                         <div className='item' key={cur.id}>
                             <div className='image' style={{ backgroundImage: `url(${cur.poster})` }}></div>
+                            <div className='button'>Đặt vé</div>
                             <div className='infor'>
                                 <div className='title'>{cur.title}</div>
                                 <div className='genre'>
