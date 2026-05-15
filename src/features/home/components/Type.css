@@ -11,6 +11,7 @@
     position: sticky;
     top: 64px;
     z-index: 1;
+    backdrop-filter: blur(20px);
 }
 
 .Type .title {

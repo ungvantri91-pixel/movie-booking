@@ -2,9 +2,17 @@ import { useSelector } from 'react-redux';
 import { movies } from '../../../data/movies';
 import minPrice from '../../../services/minPrice';
 import './List.css';
+import { useDispatch } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
+import { choose } from '../../detail/slices/detailSlice';
 function List() {
     var movieList = useSelector((state) => state.type.data);
     if (movieList === null) movieList = movies;
+    const navigate = useNavigate();
+    const handle = () => {
+        navigate("/detail");
+    }
+    const dispatch = useDispatch();
     return (
         <div className='List'>
             <div className='container-1'>
@@ -14,7 +22,7 @@ function List() {
             <div className='container-2'>
                 {movieList.map((cur) => {
                     return (
-                        <div className='item' key={cur.id}>
+                        <div className='item' key={cur.id} onClick={() => {dispatch(choose(cur)); handle();}}>
                             <div className='image' style={{ backgroundImage: `url(${cur.poster})` }}></div>
                             <div className='button'>Đặt vé</div>
                             <div className='infor'>

@@ -1,0 +1,30 @@
+.NavBar {
+    margin-top: 64px;
+    background-color: #141418;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 10px;
+}
+
+.NavBar .return {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    display: inline;
+    padding: 7px 12px;
+    border-radius: 10px;
+}
+
+.NavBar .return:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+}
+
+.NavBar .title {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+}
